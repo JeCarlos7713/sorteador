@@ -1,0 +1,20 @@
+<section class="content-gift-cards">
+    <div class="all-content-gift-cards">
+        <div class="img-gift-cards">
+            <img src="../../../assets/Rifa Jean & Sara - Outback.png" alt="Fome de Outback">
+        </div>
+        <div class="contain-gift-cards">
+            <div class="text-gift-cards">
+                <h2 class="title-gift-cards">Regras de uso do vale-presente:</h2>
+            </div>
+        </div>
+        <div class="content-infos-gift-cards">
+            <div *ngFor="let message of arrMessages" class="content-info">
+                <h4>{{message.id}}. {{message.message   }} </h4>
+            </div>
+        </div>
+        <div class="observation-rule">
+            <p>*Nosso Vale-Presente só pode ser utilizado pessoalmente em nossos restaurantes ou para takeaway. Não é válido para delivery e pedidos feitos por apps.</p>
+        </div>
+    </div>
+</section>

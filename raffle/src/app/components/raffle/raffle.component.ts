@@ -133,7 +133,7 @@ export class RaffleComponent {
     },
     {
       name    : "Madrina - Sara",
-      numbers : [ 100, 113 ]
+      numbers : [ 49, 100, 113 ]
     },
     {
       name    : "Rafaela",
@@ -154,6 +154,10 @@ export class RaffleComponent {
     {
       name    : "Michele",
       numbers : [ 149, 150 ]
+    },
+    {
+      name    : "Diná",
+      numbers : [ 63 ]
     }
   ]
   
@@ -167,13 +171,19 @@ export class RaffleComponent {
       this.index = Math.floor(Math.random() * 150)
       this.raffle = String(this.index)
 
-      if (this.countNumber === 150) {
+      if (this.countNumber === 90) {
         clearInterval(interval);
         const winner = this.numbersRaffle.filter(numberRafle => numberRafle.numbers.includes(this.index))
-        this.titleWinner = 'Meus parabéns ' + winner[0].name + "!"
-        this.countNumber = 1
-        this.showGiftCardsRules = true
-        this.modalRaffle = true
+        
+        if (winner.length > 0) {
+          this.titleWinner = 'Meus parabéns ' + winner[0].name + "!"
+          this.countNumber = 1
+          this.showGiftCardsRules = true
+          this.modalRaffle = true
+        } else {
+          this.titleWinner = 'Número não encontrado, por favor, contate a equipe de TI.'
+          this.countNumber = 1
+        }
       }
     }, 100)
   }

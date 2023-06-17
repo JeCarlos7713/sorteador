@@ -24,7 +24,7 @@
     text-transform: uppercase;
     font-weight: 700;
     background-color: #FDA84B;
-    border: 1px solid #FDA84B;
+    border: 2px solid #FDA84B;
     border-radius: 10px;
     color: #210000;
 }
@@ -32,7 +32,6 @@
 
 .btn-raffle:hover{
     background-color: transparent;
-    border: 1px solid #FDA84B;
     color: #FDA84B;
     transition: 0.5s ease-in-out;
 }

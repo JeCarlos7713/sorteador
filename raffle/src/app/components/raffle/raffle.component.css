@@ -53,6 +53,7 @@
     border-radius: 20px;
     color: #FDA84B;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .content-gift-card-rules{
@@ -70,4 +71,15 @@
     width: 100vw;
     height: 100vh;
     background-color: #2100008f;
+    padding-top: 100px;
+}
+
+h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h4 img{
+    margin-left: 5px;
 }

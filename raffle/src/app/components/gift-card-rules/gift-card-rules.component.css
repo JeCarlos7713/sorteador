@@ -1,0 +1,67 @@
+.content-gift-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.all-content-gift-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 90%;
+}
+
+.contain-gift-cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-gift-cards{
+    text-align: center;
+}
+
+
+.title-gift-cards{
+    text-align: center;
+    margin: 15px 0;
+    color: #FDA84B;
+    text-transform: uppercase;
+}
+
+.content-infos-gift-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-info{
+    background: #FDA84B;
+    padding: 10px;
+    width: 60%;
+    text-align: center;
+    border-radius: 20px;
+    color: #210000;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.observation-rule{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.observation-rule p{
+    padding: 0 20% ;
+    text-align: center;
+    font-weight: 600;
+    color: #FDA84B;
+}
