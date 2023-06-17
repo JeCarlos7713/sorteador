@@ -1,0 +1,54 @@
+.content-raffle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.all-content-raffle{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 90%;
+}
+
+.content-number-raffle{
+    width: 270px;
+    height: 260px;
+    background: #FDA84B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.contain-raffle{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#number-raffle{
+    font-size: 6rem;
+    font-weight: 800;
+    color: #210000;
+}
+
+.title-raffle{
+    text-align: center;
+    margin: 15px 0;
+    color: #FDA84B;
+    text-transform: uppercase;
+}
+
+.play-raffle{
+    width: 40px;
+    height: 40px;
+    margin-top: 30px;
+    background: transparent;
+    border: 2px solid #FDA84B;
+    border-radius: 10px;
+}
