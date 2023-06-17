@@ -21,7 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 .contain-raffle{
@@ -50,5 +50,24 @@
     margin-top: 30px;
     background: transparent;
     border: 2px solid #FDA84B;
-    border-radius: 10px;
+    border-radius: 20px;
+    color: #FDA84B;
+    font-size: 1rem;
+}
+
+.content-gift-card-rules{
+    margin-top: 20px;
+}
+
+.modal-raffle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 15;
+    width: 100vw;
+    height: 100vh;
+    background-color: #2100008f;
 }

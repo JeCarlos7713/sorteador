@@ -1,20 +1,26 @@
-<section class="content-raffle">
+<section class="content-raffle" [ngClass]="{'modal-raffle' : modalRaffle}">
     <div class="all-content-raffle">
         <div class="img-raffle">
             <img src="../../../assets/Rifa Jean & Sara - Outback.png" alt="Fome de Outback">
         </div>
         <div class="contain-raffle">
             <div class="text-raffle">
-                <h2 class="title-raffle">O número vencedor é:</h2>
+                <h2 class="title-raffle" id="title-winner">{{ titleWinner }}</h2>
             </div>
             <div class="content-number-raffle">
-                <h1 id="number-raffle">?</h1>
+                <h2 id="number-raffle">{{ raffle }}</h2>
             </div>
-            <div class="button-play-raffle">
-                <button class="play-raffle">
-    
-                </button>
+            
+            <div *ngIf="showGiftCardsRules == true; else buttonRaffle" class="content-gift-card-rules">
+                <a routerLink="/gift-card-rules" class="gift-card-rules-title title-raffle"> <h4>Regras do Vale-Presente</h4> </a>
             </div>
+            <ng-template #buttonRaffle>
+                <div class="button-play-raffle">
+                    <button class="play-raffle" (click)="playRaffle()">
+                        &#9654;
+                    </button>
+                </div>
+            </ng-template>
         </div>
     </div>
 </section>
